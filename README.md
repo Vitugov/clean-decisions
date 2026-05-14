@@ -4,34 +4,28 @@ A thinking partner for decisions you'll live with for years.
 
 ## Install
 
-Download [`clean-decisions.zip`](./clean-decisions.zip).
+Download [`clean-decisions.md`](./clean-decisions.md).
 
-**Claude.ai:** Customize → Skills → **+** → upload the ZIP.
+Then choose how to use it:
 
-**ChatGPT:** Profile → Skills → **+** → upload the ZIP.
+### Single conversation
 
-**Claude Code, Codex CLI, Cursor, Gemini CLI, Antigravity, Windsurf:** follow your platform's standard Agent Skills installation. Clean Decisions follows the open [Agent Skills standard](https://agentskills.io), so the same ZIP works everywhere the standard is supported.
+Drag the file into a chat (Claude, ChatGPT, Gemini, or any other LLM that accepts file uploads) and ask the model to apply it. Works on any plan. Lives only inside that conversation.
 
-## Use
+### Project / Custom Instructions
 
-After installing, the skill activates in two ways:
+Copy the contents of the file into your platform's Project Instructions or Custom Instructions field. The approach will be active across all conversations in that project.
 
-**Automatic.** When you bring up a real decision — something you're stuck on, doubting, or wrestling with — the skill triggers itself based on context.
+- **Claude.ai:** Projects → your project → Instructions
+- **ChatGPT:** Settings → Personalization → Custom Instructions
+- **Other platforms:** any field labeled system prompt, custom instructions, or project instructions
 
-**Explicit.** Type *"activate clean decisions"* in any conversation to start a session directly. Works on every platform that supports the skill.
+### As a skill
 
-Starts in English by default. Will ask once which language you'd like to use, then continue in that one.
+For platforms that support [Agent Skills](https://agentskills.io) — upload the file through the skill installation flow. The skill triggers automatically when context calls for it, or when you write *"activate clean decisions"*.
 
-## Alternative: use without installing
-
-If your platform doesn't support Agent Skills, or you'd rather not install anything:
-
-1. Open [`clean-decisions.md`](./clean-decisions.md).
-2. Copy its contents.
-3. Paste into Project Instructions / Custom Instructions / system prompt.
-4. Start a new conversation.
-
-Works in claude.ai Projects, ChatGPT Custom Instructions, and any interface that accepts a system prompt. In this mode the prompt is always active — no trigger phrase needed.
+- **Claude.ai** (Pro/Max/Team/Enterprise with Code Execution enabled): Settings → Features → Skills → upload the file.
+- **ChatGPT, Gemini, Codex, Cursor**: follow each platform's skill installation flow.
 
 ---
 
@@ -62,7 +56,7 @@ It works with the criteria you already have, even when they're hidden or contrad
 
 ## Memory (optional)
 
-The skill can keep a small `memory.md` file with observations about your patterns — what energizes you, what drains you, the criteria you return to, the loops you fall into. It's written as **hypotheses**, never as facts, and it's primarily a mirror for you, not a database for the model. Everything proposed for memory is confirmed before being written.
+The tool can keep a small `memory.md` file with observations about your patterns — what energizes you, what drains you, the criteria you return to, the loops you fall into. It's written as **hypotheses**, never as facts, and it's primarily a mirror for you, not a database for the model. Everything proposed for memory is confirmed before being written.
 
 ## Deeper
 
@@ -70,7 +64,7 @@ The skill can keep a small `memory.md` file with observations about your pattern
 
 ## Design notes
 
-Built for [Claude Opus 4.7](https://www.anthropic.com/news/claude-opus-4-7) and similarly capable models. Smaller models may need more explicit scaffolding — feedback welcome.
+Built for [Claude Opus 4.7](https://www.anthropic.com/news/claude-opus-4-7) and similarly capable models. Smaller or more directive-following models may need additional explicit constraints — feedback welcome.
 
 The prompt is deliberately short. The hardest work in its design was removing structure, not adding it.
 

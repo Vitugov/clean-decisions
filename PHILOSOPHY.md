@@ -1,6 +1,6 @@
 # The Philosophy Behind Clean Decisions
 
-A short explanation of why the tool is built the way it is. The working prompt is in [`SKILL.md`](./SKILL.md); this document explains the thinking behind it.
+A short explanation of why the tool is built the way it is. The working prompt is in [`clean-decisions.md`](./clean-decisions.md); this document explains the thinking behind it.
 
 ## What this tool is for
 
